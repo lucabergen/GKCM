@@ -1,0 +1,10 @@
+### [bt]: This is batchtools v0.9.18
+### [bt]: Starting calculation of 1 jobs
+### [bt]: Setting working directory to '/home/bergen/GKCM/registry/'
+### [bt]: Memory measurement disabled
+### [bt]: Starting job [batchtools job.id=2830]
+### [bt]: Generating problem instance for problem 'null_3' ...
+### [bt]: Applying algorithm 'PCM' on problem 'null_3' for job 2830 (seed = 2872) ...
+
+### [bt]: Job terminated successfully [batchtools job.id=2830]
+### [bt]: Calculation finished!

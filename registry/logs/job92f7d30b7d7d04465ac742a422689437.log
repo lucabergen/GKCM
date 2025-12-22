@@ -1,0 +1,10 @@
+### [bt]: This is batchtools v0.9.18
+### [bt]: Starting calculation of 1 jobs
+### [bt]: Setting working directory to '/home/bergen/GKCM/registry/'
+### [bt]: Memory measurement disabled
+### [bt]: Starting job [batchtools job.id=8948]
+### [bt]: Generating problem instance for problem 'null_1' ...
+### [bt]: Applying algorithm 'wGCM' on problem 'null_1' for job 8948 (seed = 8990) ...
+
+### [bt]: Job terminated successfully [batchtools job.id=8948]
+### [bt]: Calculation finished!
