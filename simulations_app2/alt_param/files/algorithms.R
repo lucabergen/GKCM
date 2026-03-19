@@ -468,7 +468,7 @@ RCIT_wrapper <- function(data, job, instance, ...){
   
   inv <- function(X) {chol2inv(chol(X))}
   
-  loo_cv <- function(Y, X, lambdas = c(1e-5,1e-4,1e-3,1e-2,1e-1,1e0,1e1,1e2)) {
+  loo_cv <- function(Y, X, lambdas = c(1e-5,1e-4,1e-3,1e-2,1e-1,1e0,1e1,1e2,1e3)) {
     
     n_full <- nrow(X)
     
@@ -614,7 +614,7 @@ RCoT_wrapper <- function(data, job, instance, ...){
   
   inv <- function(X) {chol2inv(chol(X))}
   
-  loo_cv <- function(Y, X, lambdas = c(1e-5,1e-4,1e-3,1e-2,1e-1,1e0,1e1,1e2)) {
+  loo_cv <- function(Y, X, lambdas = c(1e-5,1e-4,1e-3,1e-2,1e-1,1e0,1e1,1e2,1e3)) {
     
     n_full <- nrow(X)
     
