@@ -24,7 +24,7 @@ reg$work.dir <- reg_dir
 # unlink(reg_dir, recursive = TRUE)
 
 # Create empty registry
-reg <- makeExperimentRegistry(file.dir = reg_dir, seed = 42)
+# reg <- makeExperimentRegistry(file.dir = reg_dir, seed = 42)
 
 # No. of iterations
 k <- 100

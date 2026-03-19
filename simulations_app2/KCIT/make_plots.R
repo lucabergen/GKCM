@@ -10,7 +10,7 @@ library(data.table)
 library(ggplot2)
 library(here)
 
-load(here("simulation_app2/res_sim_app2.Rdata"))
+load(here("simulations_app2/KCIT/results_df.Rdata"))
 
 dt <- as.data.table(res_all)
 
@@ -60,7 +60,7 @@ plot_caseI <- ggplot(sum_dt[case == "I"],
         strip.placement = "outside",
         legend.position = "right")
 
-ggsave(filename = here("simulation_app2/plot_case_I.pdf"), plot = plot_caseI, 
+ggsave(filename = here("simulations_app2/KCIT/plot_case_I.pdf"), plot = plot_caseI, 
        width = 8, height = 5.5, units = "in", device = "pdf")
 
 
@@ -86,6 +86,6 @@ plot_caseII <- ggplot(sum_dt[case == "II"],
         strip.placement = "outside",
         legend.position = "right")
 
-ggsave(filename = here("simulation_app2/plot_case_II.pdf"), plot = plot_caseII, 
+ggsave(filename = here("simulations_app2/KCIT/plot_case_II.pdf"), plot = plot_caseII, 
        width = 8, height = 5.5, units = "in", device = "pdf")
 
