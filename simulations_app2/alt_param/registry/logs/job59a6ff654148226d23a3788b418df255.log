@@ -1,0 +1,10 @@
+### [bt]: This is batchtools v0.9.18
+### [bt]: Starting calculation of 1 jobs
+### [bt]: Setting working directory to '/home/bergen/GKCM/simulations_app2/alt_param/registry'
+### [bt]: Memory measurement disabled
+### [bt]: Starting job [batchtools job.id=31699]
+### [bt]: Generating problem instance for problem 'null_4' ...
+### [bt]: Applying algorithm 'KCIT' on problem 'null_4' for job 31699 (seed = 31741) ...
+
+### [bt]: Job terminated successfully [batchtools job.id=31699]
+### [bt]: Calculation finished!

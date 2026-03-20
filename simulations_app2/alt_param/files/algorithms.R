@@ -518,6 +518,23 @@ RCIT_wrapper <- function(data, job, instance, ...){
     )
   }
   
+  # Compute residuals
+  KRR_residuals <- function(Y, X, lambda){
+    
+    n <- nrow(X)
+    p <- ncol(X)
+    
+    XtX <- crossprod(X)
+    diag(XtX) <- diag(XtX) + lambda
+    R   <- chol(XtX)
+    
+    XtY <- crossprod(X, Y)
+    B   <- backsolve(R, forwardsolve(t(R), XtY))
+    
+    Y - X %*% B
+    
+  }
+
   RCIT <- function(X, Y, Z, lambda = NULL, sigma = 1,  
                    n_RFF_xy = 10, n_RFF_z = 200, seed = NULL){
     
