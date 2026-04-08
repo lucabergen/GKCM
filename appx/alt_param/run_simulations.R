@@ -11,7 +11,7 @@ library(batchtools)
 library(here)
 
 # Load registry with computed experiments (ignore warning)
-reg_dir <- here("simulations_app2/alt_param/registry")
+reg_dir <- here("appx/alt_param/registry")
 reg <- loadRegistry(reg_dir, writeable = T)
 reg$work.dir <- reg_dir
 
@@ -43,7 +43,7 @@ if (.Platform$OS.type == "windows") {
 }
 
 # Load data generating processes and tests
-source(here("simulations_app2/alt_param/files/problems.R"))
+source(here("appx/alt_param/files/problems.R"))
 addProblem(name = "null_1", fun = dgp_null1, seed = 100)
 addProblem(name = "null_2", fun = dgp_null2, seed = 200)
 addProblem(name = "null_3", fun = dgp_null3, seed = 300)
@@ -52,7 +52,7 @@ addProblem(name = "alt_1",  fun = dgp_alt1,  seed = 500)
 addProblem(name = "alt_2",  fun = dgp_alt2,  seed = 600)
 addProblem(name = "alt_3",  fun = dgp_alt3,  seed = 700)
 
-source(here("simulations_app2/alt_param/files/algorithms.R"))
+source(here("appx/alt_param/files/algorithms.R"))
 addAlgorithm(name = "PCM",      fun = PCM_wrapper)
 addAlgorithm(name = "GCM",      fun = GCM_wrapper)
 addAlgorithm(name = "wGCM",     fun = wGCM_wrapper)

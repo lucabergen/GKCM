@@ -13,7 +13,7 @@ library(future.apply)
 library(here)
 library(data.table)
 
-source(here("simulations_app2/KCIT/CI_tests.R"))
+source(here("appx/KCIT/CI_tests.R"))
 
 # number of iterations
 k <- 100  
@@ -305,4 +305,4 @@ res_II_CD <- do.call(rbind, lapply(n_vals, simulate_caseII_CD, k = k))
 
 res_all <- rbind(res_I_CI, res_I_CD, res_II_CI, res_II_CD)
 
-save(res_all, file = here("simulations_app2/KCIT/results_df.Rdata"))
+save(res_all, file = here("appx/KCIT/results_df.Rdata"))

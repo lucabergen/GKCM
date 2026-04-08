@@ -14,7 +14,7 @@ library(patchwork)
 alpha <- 0.05
 
 # Load registry with precomputed experiments (ignore warning)
-reg_dir <- here("simulations_app2/alt_param/registry")
+reg_dir <- here("appx/alt_param/registry")
 reg <- loadRegistry(reg_dir, writeable = T)
 # Save results
 dt <- flatten(ijoin(reduceResultsDataTable(), getJobPars()))
@@ -109,7 +109,7 @@ plot_null <- ggplot(
     panel.background = element_blank()
   )
 
-ggsave(filename = here("simulations_app2/alt_param/plot_null2.pdf"), plot = plot_null, 
+ggsave(filename = here("appx/alt_param/plot_null2.pdf"), plot = plot_null, 
        width = 8, height = 5.5, units = "in", device = "pdf")
 
 
@@ -162,5 +162,5 @@ plot_alt <- ggplot(
         panel.background = element_blank()
   )
 
-ggsave(filename = here("simulations_app2/alt_param/plot_alt2.pdf"), plot = plot_alt, 
+ggsave(filename = here("appx/alt_param/plot_alt2.pdf"), plot = plot_alt, 
        width = 8, height = 4.3, units = "in", device = "pdf")
