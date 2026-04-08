@@ -13,7 +13,7 @@ library(patchwork)
 
 alpha <- 0.05
 
-# Load registry with precomputed experiments
+# Load registry with precomputed experiments (ignore warning)
 reg_dir <- here("registry")
 reg <- loadRegistry(reg_dir, writeable = T)
 # Save results

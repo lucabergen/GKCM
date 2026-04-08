@@ -10,7 +10,7 @@ pak::pkg_install(c("batchtools@0.9.18", "here@1.0.2", "comets@0.2-2",
 library(batchtools)
 library(here)
 
-# Load registry with computed experiments
+# Load registry with computed experiments (ignore warning)
 reg_dir <- here("registry")
 reg <- loadRegistry(reg_dir, writeable = T)
 reg$work.dir <- reg_dir
@@ -18,7 +18,7 @@ reg$work.dir <- reg_dir
 ################################################################################
 
 # All experiments are already computed. To run the simulation yourself 
-# (caution: this will take quite long!) uncomment and execute the following: 
+# (caution: this will take quite long) uncomment and execute the following: 
 
 # Delete existing directory
 # unlink(reg_dir, recursive = TRUE)
